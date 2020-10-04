@@ -1,0 +1,12 @@
+#daily-python-challenge
+QUESTION:
+This is an interview question asked by Twitter.
+You run an e-commerce website and want to record the last N order ids in a log. Implement a data structure to accomplish this, with the following API:
+record(order_id): adds the order_id to the log
+get_last(i): gets the ith last element from the log. i is guaranteed to be smaller than or equal to N.
+You should be as efficient with time and space as possible. (edited) 
+
+
+soruda bir data structure, veri yapısı oluştur 2 tane API tanımla diyor. Bütünlüğü koruma ve tek bir yapı altında bunları yapabilmek için Class tanımlamak gerekiyor.
+Class kullanmadan da bir çözüm üretilebilir, ancak bu bütünlük sağlanamaz ve bu çözüm profesyonel bir çözüm olmaz.
+Soruda data structure dediği ve 2 API (Method) tanımla demesi, cevap olarak bizden bir Class beklendiğine bir ipucu veriyor.
