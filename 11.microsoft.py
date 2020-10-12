@@ -23,3 +23,27 @@ def read7():
     index += len(temp)
     return temp
 
+#  class kullanarak çözüm
+class fileread:
+    def __init__(self):
+        self.leftover = ""
+    def readN(self, n):
+        value = self.leftover
+        text = None
+        while len(value) < n and (text is None or len(text) == 7):
+            text = read7()
+            value += text
+        self.leftover = value[n:]
+        return value[:n]
+
+# class kullanmadan çözüm
+leftover = ""
+def readN(n):
+    global leftover
+    value = leftover
+    text = None
+    while len(value) < n and (text is None or len(text) == 7):
+        text = read7()
+        value += text
+    leftover = value[n:]
+    return value[:n]
