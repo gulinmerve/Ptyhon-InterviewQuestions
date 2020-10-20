@@ -11,7 +11,7 @@ def nexperm(lst):
     return lst
 
 
-#çözüm 2
+# çözüm 2
 from itertools import permutations
 def nexperm2(lst):
     perm = sorted(list(permutations(lst)))
