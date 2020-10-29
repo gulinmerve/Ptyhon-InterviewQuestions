@@ -3,3 +3,11 @@ QUESTION:
 This is an interview question asked by Google.
 Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.
 For example, given [6, 1, 3, 3, 3, 6, 6], return 1. Given [13, 19, 13, 13], return 19.
+
+
+
+Çözüm-1 çok kısa gözüküyor. Ama her kısa çözüm iyi değildir.
+Çözüm-1 50-60 ms de çözümü elde ediyor.
+Çözüm-2 ise 36-48 ms'de.
+Arada hız farkı var.
+Not : ilk test verileri çok farklı çıkmıştı. Şimdi daha tutarlı sonuçlar veriyor tool. Ama uzun çözüm olmasına rağmen Çözüm-2 daha kısa sürede çözüme ulaşıyor. (edited) 
