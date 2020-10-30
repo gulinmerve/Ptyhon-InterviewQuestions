@@ -24,4 +24,9 @@ def subset(lst, k):
                 return p
 
 
-
+def subarraySum(nums,k):
+    result = []
+    for i in nums:
+        result += [j + [i] for j in result]
+        result.append([i])
+    return list(filter(lambda x: sum(x) == k, result))
