@@ -10,4 +10,4 @@ For example, given [6, 1, 3, 3, 3, 6, 6], return 1. Given [13, 19, 13, 13], retu
 Çözüm-1 50-60 ms de çözümü elde ediyor.
 Çözüm-2 ise 36-48 ms'de.
 Arada hız farkı var.
-Not : ilk test verileri çok farklı çıkmıştı. Şimdi daha tutarlı sonuçlar veriyor tool. Ama uzun çözüm olmasına rağmen Çözüm-2 daha kısa sürede çözüme ulaşıyor. (edited) 
+Not : ilk test verileri çok farklı çıkmıştı. Şimdi daha tutarlı sonuçlar veriyor tool. Ama uzun çözüm olmasına rağmen Çözüm-2 daha kısa sürede çözüme ulaşıyor. 
