@@ -1,3 +1,5 @@
+#Solution1
+
 def check_bishops(bishops, m):
     result = 0
     for i in range(len(bishops)):
