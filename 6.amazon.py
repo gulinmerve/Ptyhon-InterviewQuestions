@@ -1,3 +1,4 @@
+#Çözüm1
 def staircase(n, X):
     if n < 0:
         return 0
