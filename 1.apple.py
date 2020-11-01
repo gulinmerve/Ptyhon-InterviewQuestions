@@ -17,3 +17,15 @@ def table():
         df.iloc[i-1] = np.arange(1,n+1)*i
     print(f'there is/are "{df[df==x].count().sum()}" x "{x}" in the table')
 
+
+
+    #Solution2
+    def multi_tables1(n, x):
+        count = 0
+    for i in range(1, n + 1):
+        if x % i == 0 and x / i <= n:
+            count += 1
+    return count
+    #
+    def multi_tables2(n, x):
+    return sum([1 for i in range(1, n + 1) if x % i == 0 and x / i <= n])
