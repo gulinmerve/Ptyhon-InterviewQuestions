@@ -29,3 +29,17 @@ def buy_and_sell(lst):
                 max_profit = lst[j] - lst[i]
     return max_profit
 print(buy_and_sell(lst))
+
+
+now = datetime.now()
+# buraya hızı ölçülecek kod satırları ya da fonksiyon gelecek
+later = datetime.now()
+print((later - now).total_seconds())
+
+
+# Çözüm-1
+def m_profit(prices):
+    result = 0
+    for i in range(len(prices)-1):
+        result = max(result, max(prices[i+1:]) - prices[i])
+    return result
