@@ -1,3 +1,4 @@
+#Solution 1
 lst = [9, 11, 8, 5, 7, 10]
 maxdif = 0
 for i in range(len(lst)):
