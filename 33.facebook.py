@@ -43,3 +43,7 @@ def m_profit(prices):
     for i in range(len(prices)-1):
         result = max(result, max(prices[i+1:]) - prices[i])
     return result
+
+# Çözüm-2
+def m_profit2(prices):       
+    return 0 if len(prices) < 2 else max(0,max([max(prices[i+1:]) - prices[i] for i in range(len(prices)-1)]))
