@@ -18,3 +18,16 @@ def subseq(arr):
 		return 0
 	return result
 print(subseq(arr))
+
+
+def max_sum(array):
+    temp = 0
+    maximum = 0
+    for i in range(len(array)):
+        for j in range(1, len(array)+1):
+            if (j > i):
+                if (sum(array[i:j]) > temp):
+                    temp = sum(array[i:j])
+                    if (temp > maximum):
+                        maximum = temp
+    return maximum
