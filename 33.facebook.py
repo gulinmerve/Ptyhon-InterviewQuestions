@@ -57,3 +57,5 @@ def m_profit3(prices):
         sell = max(sell, prices[i])
         result = max(result, sell - prices[i])
     return result
+
+
