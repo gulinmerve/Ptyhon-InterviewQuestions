@@ -46,3 +46,11 @@ def f_maxsub(nums):
         for j in range(i+1,len(nums)+1):
             result = max(result, sum(nums[i:j]))
     return max(0,result)
+
+# Çözüm-2
+def f_maxsub2(nums):
+    result = now = float("-inf")        
+    for i in nums:
+        now = max(now + i, i)
+        result = max(result, now)
+    return max(result,0)
