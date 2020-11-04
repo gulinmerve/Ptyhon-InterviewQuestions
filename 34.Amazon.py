@@ -31,3 +31,18 @@ def max_sum(array):
                     if (temp > maximum):
                         maximum = temp
     return maximum
+
+# Çözüm-1
+def f_maxsub(nums):
+    result = float("-inf")
+    if len(nums) < 2:
+        try:
+            result = max(0,nums[0])
+        except:
+            result = 0
+        else:
+            return result
+    for i in range(len(nums)):
+        for j in range(i+1,len(nums)+1):
+            result = max(result, sum(nums[i:j]))
+    return max(0,result)
