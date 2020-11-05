@@ -9,3 +9,8 @@ def shuffle(x,k):
 		deck[x-2], deck[y-2] = deck[y-2], deck[x-2]
 	return deck
 print(shuffle(500,52))
+
+def shuffle(cards, k):
+    for i in range(k):
+        pos = i + randint(0,k-i-1)
+        cards[i], cards[pos] = cards[pos], cards[i]
