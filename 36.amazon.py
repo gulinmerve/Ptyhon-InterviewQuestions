@@ -25,3 +25,13 @@ def palindrome(s):
 	return "".join(max(res1,res2,key=len))
 s = 'aabcdcb'
 print(palindrome(s))
+
+
+# Çözüm-1
+def longestpalindrom(text):
+    result = ""
+    for i in range(len(text)):
+        for j in range(len(text),i,-1):
+            if (text[i:j] == text[i:j][::-1]) and len(result) < len(text[i:j]):
+                result = text[i:j]
+    return result
