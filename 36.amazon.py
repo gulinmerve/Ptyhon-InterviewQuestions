@@ -35,3 +35,7 @@ def longestpalindrom(text):
             if (text[i:j] == text[i:j][::-1]) and len(result) < len(text[i:j]):
                 result = text[i:j]
     return result
+
+# Çözüm-2
+def longestpalindrom2(text):
+    return max([text[i:j] for i in range(len(text)) for j in range(len(text),i,-1) if (text[i:j] == text[i:j][::-1])], key = len)
