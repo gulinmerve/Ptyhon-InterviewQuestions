@@ -15,3 +15,11 @@ def twoSum1(nums, target):
 # Çözüm-2
 def twoSum2(nums, target):
     return [[i] + [nums.index(target-nums[i])] for i in range(len(nums)) if (target-nums[i] in nums) and nums.index(target-nums[i]) != i][0]
+
+# çözüm-3
+def twoSum4(nums, target):
+    d = {}
+    for i in range(len(nums)):
+        if target-nums[i] in d:
+            return [d[target-nums[i]], i]
+        d[nums[i]] = i
