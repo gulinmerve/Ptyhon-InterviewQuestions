@@ -23,3 +23,23 @@ def twoSum4(nums, target):
         if target-nums[i] in d:
             return [d[target-nums[i]], i]
         d[nums[i]] = i
+
+
+class Solution(object):
+    def twoSum( self, nums, target):
+        i= 0
+        j = len(nums)-1
+        temp = sorted(nums)
+        while i<j:
+            if temp[i] + temp[j] == target:
+                if temp[i] == temp[j]:
+                    x = nums.index(temp[i])
+                    nums.remove(temp[i])
+                    return x,nums.index(temp[j])+1
+                else:
+                    return nums.index(temp[i]),nums.index(temp[j])
+                break
+            elif temp[i]+temp[j] > target:
+                j-=1
+            elif temp[i]+temp[j] < target:
+                i+=1    
