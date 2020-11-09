@@ -68,3 +68,13 @@ class Solution:
             else:
                 return b
         return b
+
+words = ["flower","flow","flight"]
+def f(words,criteria=sorted(words, key=len)[0]):
+  if len(criteria)==0:
+    return " "
+  elif all([ word.startswith(criteria) for word in words]):
+    return criteria
+  else:
+    return f(words, criteria = criteria[:-1])
+print(f(words))
