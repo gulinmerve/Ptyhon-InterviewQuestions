@@ -30,3 +30,22 @@ def longestCommonPrefix1(strs):
             result += short[index]
             index += 1
         return result
+
+
+# çözüm-2
+def longestCommonPrefix2(strs):
+    result = ""
+    index = 0
+    try:
+        short = min(strs,key = len)
+        result = ""
+        i = 0
+        while i < len(short):
+            for item in strs:
+                if item[i] != short[i]:
+                    return result
+            result += short[i]
+            i += 1
+    except:
+        return result
+    return result
