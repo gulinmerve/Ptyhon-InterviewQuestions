@@ -49,3 +49,10 @@ def longestCommonPrefix2(strs):
     except:
         return result
     return result
+
+# çözüm-3
+def longestCommonPrefix3(strs):
+    if len(strs) < 2:
+        return strs[0] if strs else ""
+    lst = [i for i in range(len(min(strs,key = len))) for j in range(len(strs)) if strs[j][i] != strs[0][i]]
+    return strs[0][:min(lst)] if lst else min(strs,key = len)
