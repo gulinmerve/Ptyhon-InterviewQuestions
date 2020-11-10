@@ -20,3 +20,13 @@ def removeDuplicates(nums):
             nums[j] = nums[i]
         i += 1
     return j+1
+
+#Çözüm-2
+def removeDuplicates2(nums):
+    i = 0
+    while i < len(nums)-1:
+        if nums[i] == nums[i+1]:
+            nums.pop(i+1)
+        else:
+            i += 1
+    return len(nums)
