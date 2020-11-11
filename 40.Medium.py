@@ -9,3 +9,14 @@ class Solution:
             else :
                 temp = temp[temp.index(i)+1:] + i
         return len(res)
+
+def lengthOfLongestSubstring(s):
+    smax, temp = "", ""
+    for i in s:
+        if i in temp:
+            if len(temp) > len(smax):
+                smax = temp
+            while i in temp:
+                temp = temp[1:]
+        temp += i
+    return max(len(smax),len(temp))
