@@ -21,3 +21,5 @@ def lengthOfLastWord1(s):
 
 def lenlast(s):
     return 0 if ' ' not in s else len(s[s.index(' ')+1:])
+
+def last_word(words:str) -> int:
