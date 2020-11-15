@@ -7,3 +7,8 @@ def last_word(words:str) -> int:
 print(last_word("World"))
 
 def last_word(words:str) -> int:
+
+# çözüm-1
+def lengthOfLastWord(s):
+    lst = s.split()
+    return len(lst[-1]) if lst else 0
