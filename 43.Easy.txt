@@ -11,3 +11,6 @@ Explanation: The array represents the integer 123.
 Input: digits = [9,9]
 Output: [1,0,0]
 Explanation: The array represents the integer 99.
+
+Input: digits = [9]
+Output: [1,0]
