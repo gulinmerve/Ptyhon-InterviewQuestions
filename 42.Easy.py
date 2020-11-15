@@ -18,3 +18,6 @@ def lengthOfLastWord1(s):
     s = s.strip()
     pos = s.rfind(" ")
     return len(s[pos+1:]) if pos>-1 else (len(s) if s else 0)
+
+def lenlast(s):
+    return 0 if ' ' not in s else len(s[s.index(' ')+1:])
