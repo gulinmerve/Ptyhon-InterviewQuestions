@@ -12,3 +12,9 @@ def last_word(words:str) -> int:
 def lengthOfLastWord(s):
     lst = s.split()
     return len(lst[-1]) if lst else 0
+
+# çözüm-2
+def lengthOfLastWord1(s):
+    s = s.strip()
+    pos = s.rfind(" ")
+    return len(s[pos+1:]) if pos>-1 else (len(s) if s else 0)
