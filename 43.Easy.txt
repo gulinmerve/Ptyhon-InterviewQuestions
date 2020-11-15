@@ -7,3 +7,7 @@ You may assume the integer does not contain any leading zero, except the number 
 Input: digits = [1,2,3]
 Output: [1,2,4]
 Explanation: The array represents the integer 123.
+
+Input: digits = [9,9]
+Output: [1,0,0]
+Explanation: The array represents the integer 99.
