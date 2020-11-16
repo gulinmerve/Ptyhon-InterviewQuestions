@@ -17,4 +17,9 @@ def plusOne2(digits):
     s = "".join([str(i) for i in digits])
     leftzeros = len(s) - len(str(int(s)))
     return [0]*leftzeros + [int(i) for i in str(int(s)+1)]
-    
+
+def addone(arr):
+    num = int(''.join([str(i) for i in arr]))  # convert to int
+    numback = num + 1 
+    digits = [int(i) for i in str(numback)]  # convert to array
+    return digits
