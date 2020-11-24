@@ -11,3 +11,11 @@ class Solution:
             for i in range(2,n):
                 lst.append(lst[-1]+lst[-2])
             return lst[-1]
+
+
+from math import factorial
+def climbStairs(n):
+    count=0
+    for i in range(n,1,-2):
+        count += factorial(i+(n-i)//2) / factorial(i) / factorial((n-i)//2)
+    return int(count)    
