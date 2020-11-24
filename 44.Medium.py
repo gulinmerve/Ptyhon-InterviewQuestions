@@ -11,7 +11,7 @@ class Solution:
             for i in range(2,n):
                 lst.append(lst[-1]+lst[-2])
             return lst[-1]
-
+#solution 2
 
 from math import factorial
 def climbStairs(n):
