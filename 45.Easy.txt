@@ -1,0 +1,4 @@
+#daily-python-challenge
+QUESTION: Level of Interview Question = Easy
+Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
+Example:
