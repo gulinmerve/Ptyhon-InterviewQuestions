@@ -1,5 +1,5 @@
 
-
+#Solution1-
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
         if not numRows:
