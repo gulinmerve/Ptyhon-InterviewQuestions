@@ -14,7 +14,7 @@ class Solution:
             lst.append(tmp)
             tmp = []
         return lst
-
+#Solution2
  def generate(numRows): 
     result = [[1]]
     for i in range(1,numRows):
