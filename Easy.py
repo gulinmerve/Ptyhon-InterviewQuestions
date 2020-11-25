@@ -14,3 +14,9 @@ class Solution:
             lst.append(tmp)
             tmp = []
         return lst
+
+ def generate(numRows): 
+    result = [[1]]
+    for i in range(1,numRows):
+        result.append([1]+[result[-1][j]+result[-1][j+1] for j in range(len(result[-1])-1)]+[1])
+    return [] if numRows < 1 else result
