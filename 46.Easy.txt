@@ -21,3 +21,5 @@ Output: "AB"
 Example 3:
 Input: 701
 Output: "ZY"
+###Büyük harfler 65'ten itibaren başlıyor. chr(65) demek A demek.
+##ord('A') dersek bize 65 veriri
