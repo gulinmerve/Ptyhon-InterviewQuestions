@@ -10,5 +10,5 @@ Given a positive integer, return its corresponding column title as appear in an 
     27 -> AA
     28 -> AB 
     ...
-
-    
+Input: 1
+Output: "A"
