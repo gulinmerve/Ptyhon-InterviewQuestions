@@ -12,3 +12,7 @@ Given a positive integer, return its corresponding column title as appear in an 
     ...
 Input: 1
 Output: "A"
+
+Example 2:
+Input: 28
+Output: "AB"
