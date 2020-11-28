@@ -4,7 +4,7 @@ for i in Input:
         print(i)
         break
 
-
+#Solution2
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         x = set(nums)
