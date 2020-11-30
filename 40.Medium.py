@@ -20,7 +20,7 @@ def lengthOfLongestSubstring(s):
                 temp = temp[1:]
         temp += i
     return max(len(smax),len(temp))
-
+#Solution
 def lengthOfLongestSubstring(s):
     smax, temp = 0, ""
     for i in s:
