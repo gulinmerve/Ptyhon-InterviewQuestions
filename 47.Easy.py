@@ -11,7 +11,7 @@ class Solution:
         for i in x:
             if nums.count(i) > len(nums)/2:
                 return i
-
+#Solution3
 def majorityElement(nums):
     return max(set(nums),key=nums.count)
 
