@@ -1,4 +1,4 @@
-#Solution
+#Solution1
 def convert3(s, numRows):
     if len(s) <= numRows or numRows == 1:
         return s
