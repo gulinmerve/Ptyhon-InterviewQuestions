@@ -14,3 +14,6 @@ class Solution:
 
 def majorityElement(nums):
     return max(set(nums),key=nums.count)
+
+def majorityElement(nums):
+    return max(set(nums),key=nums.count)
