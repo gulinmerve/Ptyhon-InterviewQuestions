@@ -11,7 +11,7 @@ def happy(n):
             answer.append(summ)
         n=summ
     return True
-
+#Solution2 Added
 def isHappy(n):
     seen = set()
     while n not in seen:
