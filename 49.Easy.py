@@ -1,3 +1,4 @@
+#Solution" added
 def happy(n):
     answer=[]
     while n!=1:
