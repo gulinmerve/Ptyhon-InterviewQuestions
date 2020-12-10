@@ -1,0 +1,1 @@
+Elimizde anlamsiz sekilde isimlendirilen bir suru pdf dosyasi var. Gormek istedigimiz dosyanin icinde gecen mesela tarih ve telefon numarasi bilgisini alarak bunu dosya ismi olarak atayan bir kod derledim. Ihtiyac duyan olabilir diye.. tek yapmak gereken bunu yapmak istedigimiz klasorun icine .py uzantisi ile kopyalayip terminalde calistirmak.
