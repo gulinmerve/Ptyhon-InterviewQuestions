@@ -8,3 +8,13 @@ def equal(a, b, c):
     else:
         return max(repeat_list)
 print(equal(2, 4, 5))
+
+
+def equal(a, b, c):
+    if a==b==c: return 3
+    elif a==b or b==c or a==c: return 2
+    else: return 0
+equal(2,4,5)
+ def equal(a, b, c):
+    	return [0,3,2,0][len(set([a,b,c]))]  
+equal(3,3,6)
