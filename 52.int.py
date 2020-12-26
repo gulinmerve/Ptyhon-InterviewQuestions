@@ -23,3 +23,18 @@ for i in Input:
         a[x] = [i]
 b=list(a.values())
 print(b)
+
+
+def anagram(lst):
+    a,b,c=[], [], []
+    for i in lst:
+        if sorted(i) not in a:
+            a.append(sorted(list(i)))
+            b.append([])
+    for j in range(len(b)):
+        for k in lst:
+            if sorted(k)==a[j]: b[j].append(k)
+    for m in sorted(b, key=len, reverse=True):
+        c.append(sorted(m))
+    return c
+anagram(["eat", "tea", "tan", "ate", "nat", "bat"])
