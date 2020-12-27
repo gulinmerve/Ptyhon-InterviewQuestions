@@ -38,3 +38,14 @@ def anagram(lst):
         c.append(sorted(m))
     return c
 anagram(["eat", "tea", "tan", "ate", "nat", "bat"])
+
+
+def groupAnagrams(strs):
+    anagrams = {}
+    for i in strs:
+        item = "".join(sorted(i))
+        if item in anagrams:
+            anagrams[item].append(i)
+        else:
+            anagrams[item]=[i]
+    return anagrams.values()
