@@ -49,3 +49,14 @@ def groupAnagrams(strs):
         else:
             anagrams[item]=[i]
     return anagrams.values()
+
+
+     a = []
+    for i in input:
+        d = []
+        for j in range(len(input)):
+            if sorted(i) == sorted(input[j]):
+                d.append(input[j])
+        if d not in a:
+            a.append(d)
+    print(a)
