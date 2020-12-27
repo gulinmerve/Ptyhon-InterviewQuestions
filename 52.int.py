@@ -60,3 +60,16 @@ def groupAnagrams(strs):
         if d not in a:
             a.append(d)
     print(a)
+
+
+A=["eat", "tea", "tan", "ate", "nat", "bat"]
+C=[]
+B=[]
+for i in A:
+    for j in A:
+        if set(i)==set(j):
+            C.append(j)
+    if not C in B:
+        B.append(C)
+    C=[]
+print(B)
