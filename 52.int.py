@@ -115,3 +115,15 @@ def anagram(input):
     return sorted(b,key=len,reverse=True)
 input=["eat", "tea", "tan", "ate", "nat", "bat"]
 anagram(input)
+
+
+Input = ["eat", "tea", "tan", "ate", "nat", "bat"]
+output = []
+for i in Input:
+    x = []
+    for j in Input:
+        if set(i) == set(j):
+            x.append(j)
+    if x not in output:
+        output.append(x)
+output
