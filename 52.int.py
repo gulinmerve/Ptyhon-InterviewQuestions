@@ -73,3 +73,15 @@ for i in A:
         B.append(C)
     C=[]
 print(B)
+
+
+mylist = ["eat", "tea", "tan", "ate", "nat", "bat"]
+c =[]
+for i in mylist:
+    k = []
+    for j in mylist:
+        if set(i) == set(j):
+            k.append(j)
+    if sorted(k) not in c:
+        c.append(sorted(k))
+print(c)
